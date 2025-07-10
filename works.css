@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f8f8; /* Light background */
+    color: #111; /* Black text */
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+}
+
+/* HEADER */
+header {
+    background: #000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a.active, nav a:hover {
+    color: #c00;
+}
+
+/* HERO */
+.works-hero {
+    text-align: center;
+    background: #222; /* Slightly darker for contrast */
+    color: white;
+    padding: 100px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.works-hero h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.works-hero p {
+    font-size: 18px;
+}
+
+/* WORKS SECTION */
+.works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 5%;
+    gap: 50px;
+    color: #111; /* Black text */
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.column h2 {
+    font-size: 24px;
+    color: #c00;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.column ul li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.column blockquote {
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+    margin-top: 15px;
+    padding-left: 20px;
+    border-left: 3px solid #c00;
+}
+
+/* CENTER IMAGE */
+.center-image {
+    flex-basis: 400px;
+    text-align: center;
+}
+
+.center-image img {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid black;
+    border-radius: 5px;
+    filter: contrast(1.2);
+}
+
+/* FULL-WIDTH BOTTOM PARAGRAPH */
+.works-summary {
+    padding: 80px 10%;
+    text-align: center;
+    background: #ddd;
+    border-top: 2px solid #c00;
+}
+.works-summary {
+    padding: 80px 10%;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    background: black;  /* Change this to black */
+    color: white; /* Make text white for contrast */
+    border-top: 2px solid #c00;
+
+}
